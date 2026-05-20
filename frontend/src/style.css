@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.monaco-scrollable-element > .scrollbar > .slider {
+  border-radius: 3px;
+}
+
+.monaco-scrollable-element > .scrollbar.vertical {
+  width: 6px !important;
+}
+
+.monaco-scrollable-element > .scrollbar.vertical .slider {
+  width: 4px !important;
+  left: 1px !important;
+}
+
+.monaco-scrollable-element > .scrollbar.horizontal {
+  height: 6px !important;
+}
+
+.monaco-scrollable-element > .scrollbar.horizontal .slider {
+  height: 4px !important;
+  top: 1px !important;
+}

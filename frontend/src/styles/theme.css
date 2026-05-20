@@ -1,0 +1,584 @@
+/* ============================================
+   易狗IDE 主题系统 - CSS 变量定义
+   支持：浅色主题 / 深色主题 / 自定义主题
+   ============================================ */
+
+/* ---- 浅色主题（默认） ---- */
+:root,
+[data-theme='light'] {
+  /* 基础背景 */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --bg-tertiary: #ebeef5;
+  --bg-canvas: #e8e8e8;
+  --bg-menu: #ffffff;
+  --bg-console: #f8f9fa;
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+  --bg-hover: #ecf5ff;
+  --bg-active: #d9ecff;
+  --bg-selected: #ecf5ff;
+
+  /* 基础文字 */
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #c0c4cc;
+  --text-menu: #303133;
+  --text-console: #303133;
+  --text-inverse: #ffffff;
+
+  /* 边框 */
+  --border-base: #dcdfe6;
+  --border-light: #e4e7ed;
+  --border-lighter: #ebeef5;
+  --border-dark: #c0c4cc;
+
+  /* 品牌色 */
+  --color-primary: #409eff;
+  --color-primary-hover: #66b1ff;
+  --color-primary-active: #3a8ee6;
+  --color-primary-light: #ecf5ff;
+  --color-success: #67c23a;
+  --color-success-light: #f0f9eb;
+  --color-warning: #e6a23c;
+  --color-warning-light: #fdf6ec;
+  --color-danger: #f56c6c;
+  --color-danger-light: #fef0f0;
+  --color-info: #909399;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  /* ---- 代码编辑器 ---- */
+  --editor-bg: #ffffff;
+  --editor-text: #303133;
+  --editor-gutter-bg: #f5f7fa;
+  --editor-gutter-text: #909399;
+  --editor-line-number: #c0c4cc;
+  --editor-line-active-bg: #ecf5ff;
+  --editor-selection-bg: #b3d8ff;
+  --editor-cursor: #303133;
+  --editor-toolbar-bg: #f5f7fa;
+  --editor-toolbar-border: #e4e7ed;
+  --editor-toolbar-text: #606266;
+  --editor-toolbar-btn-hover: #ecf5ff;
+  --editor-tab-bg: #ebeef5;
+  --editor-tab-active-bg: #ffffff;
+  --editor-tab-text: #606266;
+  --editor-tab-active-text: #409eff;
+  --editor-tab-border: #e4e7ed;
+  --editor-border: #dcdfe6;
+  --editor-input-bg: #ffffff;
+  --editor-input-border: #dcdfe6;
+  --editor-input-text: #303133;
+  --editor-input-focus-border: #409eff;
+
+  /* 语法高亮 - 浅色 */
+  --hl-comment: #008000;
+  --hl-string: #a31515;
+  --hl-number: #098658;
+  --hl-keyword: #0000ff;
+  --hl-elang: #8b00ff;
+  --hl-function: #795e26;
+  --hl-operator: #303133;
+  --hl-type: #267f99;
+  --hl-variable: #001080;
+  --hl-constant: #0070c1;
+  --hl-regex: #d16969;
+  --hl-bracket: #0431fa;
+
+  /* ---- 面板 ---- */
+  --panel-bg: #ffffff;
+  --panel-header-bg: #f5f7fa;
+  --panel-header-text: #303133;
+  --panel-border: #e4e7ed;
+  --panel-text: #606266;
+  --panel-title: #303133;
+
+  /* ---- Activity Bar (VS Code风格图标栏) ---- */
+  --activity-bar-bg: #f0f2f5;
+  --activity-bar-border: #e4e7ed;
+  --activity-icon-color: #606266;
+  --activity-icon-hover: #303133;
+  --activity-icon-active: #303133;
+  --activity-indicator: #409eff;
+  --activity-toggle-color: #909399;
+  --activity-toggle-hover: #303133;
+
+  /* ---- 表格 ---- */
+  --table-bg: #ffffff;
+  --table-header-bg: #f5f7fa;
+  --table-header-text: #303133;
+  --table-border: #ebeef5;
+  --table-row-hover: #f5f7fa;
+  --table-row-stripe: #fafafa;
+  --table-text: #606266;
+
+  /* ---- 输入控件 ---- */
+  --input-bg: #ffffff;
+  --input-border: #dcdfe6;
+  --input-text: #303133;
+  --input-placeholder: #c0c4cc;
+  --input-focus-border: #409eff;
+  --input-disabled-bg: #f5f7fa;
+
+  /* ---- 树形控件 ---- */
+  --tree-bg: transparent;
+  --tree-text: #606266;
+  --tree-hover-bg: #f5f7fa;
+  --tree-selected-bg: #ecf5ff;
+  --tree-selected-text: #409eff;
+
+  /* ---- 状态栏 ---- */
+  --statusbar-bg: #f5f7fa;
+  --statusbar-text: #606266;
+  --statusbar-border: #e4e7ed;
+
+  /* ---- 对话框 ---- */
+  --dialog-bg: #ffffff;
+  --dialog-header-bg: #f5f7fa;
+  --dialog-border: #e4e7ed;
+  --dialog-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ---- 滚动条 ---- */
+  --scrollbar-thumb: #c0c4cc;
+  --scrollbar-thumb-hover: #909399;
+  --scrollbar-track: transparent;
+
+  /* ---- 标签/徽章 ---- */
+  --tag-bg: #ecf5ff;
+  --tag-text: #409eff;
+  --tag-border: #d9ecff;
+
+  /* ---- 分割线 ---- */
+  --divider-color: #e4e7ed;
+
+  /* ---- 菜单 ---- */
+  --menu-bg: #ffffff;
+  --menu-hover-bg: #ecf5ff;
+  --menu-text: #303133;
+  --menu-active-text: #409eff;
+}
+
+/* ---- 深色主题 ---- */
+[data-theme='dark'] {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #252526;
+  --bg-tertiary: #2d2d30;
+  --bg-canvas: #1a1a1a;
+  --bg-menu: #2c2c2c;
+  --bg-console: #0d0d0d;
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+  --bg-hover: #2a2d2e;
+  --bg-active: #37373d;
+  --bg-selected: #094771;
+
+  --text-primary: #cccccc;
+  --text-regular: #999999;
+  --text-secondary: #666666;
+  --text-placeholder: #555555;
+  --text-menu: #cccccc;
+  --text-console: #d4d4d4;
+  --text-inverse: #1e1e1e;
+
+  --border-base: #3e3e42;
+  --border-light: #333333;
+  --border-lighter: #2d2d30;
+  --border-dark: #555555;
+
+  --color-primary: #0078d4;
+  --color-primary-hover: #1a8ad4;
+  --color-primary-active: #0066b3;
+  --color-primary-light: #1a3a5c;
+  --color-success: #4caf50;
+  --color-success-light: #1a3c1a;
+  --color-warning: #ff9800;
+  --color-warning-light: #3c301a;
+  --color-danger: #f44336;
+  --color-danger-light: #3c1a1a;
+  --color-info: #757575;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* ---- 代码编辑器 - 深色 ---- */
+  --editor-bg: #1e1e1e;
+  --editor-text: #d4d4d4;
+  --editor-gutter-bg: #1e1e1e;
+  --editor-gutter-text: #858585;
+  --editor-line-number: #858585;
+  --editor-line-active-bg: #2a2d2e;
+  --editor-selection-bg: #264f78;
+  --editor-cursor: #aeafad;
+  --editor-toolbar-bg: #2d2d30;
+  --editor-toolbar-border: #3e3e42;
+  --editor-toolbar-text: #cccccc;
+  --editor-toolbar-btn-hover: #3e3e42;
+  --editor-tab-bg: #2d2d30;
+  --editor-tab-active-bg: #1e1e1e;
+  --editor-tab-text: #999999;
+  --editor-tab-active-text: #ffffff;
+  --editor-tab-border: #3e3e42;
+  --editor-border: #3e3e42;
+  --editor-input-bg: #3c3c3c;
+  --editor-input-border: #555555;
+  --editor-input-text: #cccccc;
+  --editor-input-focus-border: #0078d4;
+
+  /* 语法高亮 - 深色 */
+  --hl-comment: #6a9955;
+  --hl-string: #ce9178;
+  --hl-number: #b5cea8;
+  --hl-keyword: #569cd6;
+  --hl-elang: #c586c0;
+  --hl-function: #dcdcaa;
+  --hl-operator: #d4d4d4;
+  --hl-type: #4ec9b0;
+  --hl-variable: #9cdcfe;
+  --hl-constant: #4fc1ff;
+  --hl-regex: #d16969;
+  --hl-bracket: #ffd700;
+
+  /* ---- 面板 - 深色 ---- */
+  --panel-bg: #252526;
+  --panel-header-bg: #2d2d30;
+  --panel-header-text: #cccccc;
+  --panel-border: #3e3e42;
+  --panel-text: #999999;
+  --panel-title: #cccccc;
+
+  /* ---- Activity Bar (VS Code风格图标栏) - 深色 ---- */
+  --activity-bar-bg: #333333;
+  --activity-bar-border: #3e3e42;
+  --activity-icon-color: rgba(255,255,255,0.55);
+  --activity-icon-hover: rgba(255,255,255,0.9);
+  --activity-icon-active: #ffffff;
+  --activity-indicator: #0078d4;
+  --activity-toggle-color: rgba(255,255,255,0.5);
+  --activity-toggle-hover: #ffffff;
+
+  /* ---- 表格 - 深色 ---- */
+  --table-bg: #252526;
+  --table-header-bg: #2d2d30;
+  --table-header-text: #cccccc;
+  --table-border: #3e3e42;
+  --table-row-hover: #2a2d2e;
+  --table-row-stripe: #2d2d30;
+  --table-text: #999999;
+
+  /* ---- 输入控件 - 深色 ---- */
+  --input-bg: #3c3c3c;
+  --input-border: #555555;
+  --input-text: #cccccc;
+  --input-placeholder: #666666;
+  --input-focus-border: #0078d4;
+  --input-disabled-bg: #2d2d30;
+
+  /* ---- 树形控件 - 深色 ---- */
+  --tree-bg: transparent;
+  --tree-text: #cccccc;
+  --tree-hover-bg: #2a2d2e;
+  --tree-selected-bg: #094771;
+  --tree-selected-text: #4fc1ff;
+
+  /* ---- 状态栏 - 深色 ---- */
+  --statusbar-bg: #007acc;
+  --statusbar-text: #ffffff;
+  --statusbar-border: #0066b3;
+
+  /* ---- 对话框 - 深色 ---- */
+  --dialog-bg: #2d2d30;
+  --dialog-header-bg: #333333;
+  --dialog-border: #3e3e42;
+  --dialog-overlay: rgba(0, 0, 0, 0.6);
+
+  /* ---- 滚动条 - 深色 ---- */
+  --scrollbar-thumb: #424242;
+  --scrollbar-thumb-hover: #555555;
+  --scrollbar-track: transparent;
+
+  /* ---- 标签/徽章 - 深色 ---- */
+  --tag-bg: #1a3a5c;
+  --tag-text: #4fc1ff;
+  --tag-border: #094771;
+
+  /* ---- 分割线 - 深色 ---- */
+  --divider-color: #3e3e42;
+
+  /* ---- 菜单 - 深色 ---- */
+  --menu-bg: #2c2c2c;
+  --menu-hover-bg: #3e3e42;
+  --menu-text: #cccccc;
+  --menu-active-text: #4fc1ff;
+}
+
+/* ---- 全局滚动条样式 ---- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* ---- 全局过渡动画 ---- */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* ============================================
+   Element Plus 暗色主题覆盖
+   ============================================ */
+[data-theme='dark'] {
+  /* el-dialog */
+  --el-dialog-bg-color: var(--dialog-bg);
+  --el-dialog-title-font-size: 16px;
+
+  /* el-menu */
+  --el-menu-bg-color: var(--menu-bg);
+  --el-menu-text-color: var(--menu-text);
+  --el-menu-hover-bg-color: var(--menu-hover-bg);
+  --el-menu-active-color: var(--menu-active-text);
+
+  /* el-input / el-select */
+  --el-input-bg-color: var(--input-bg);
+  --el-input-border-color: var(--input-border);
+  --el-input-text-color: var(--input-text);
+  --el-input-placeholder-color: var(--input-placeholder);
+  --el-input-focus-border-color: var(--input-focus-border);
+
+  /* el-button */
+  --el-button-bg-color: var(--bg-tertiary);
+  --el-button-border-color: var(--border-base);
+  --el-button-text-color: var(--text-primary);
+  --el-button-hover-bg-color: var(--bg-hover);
+  --el-button-hover-border-color: var(--color-primary);
+  --el-button-hover-text-color: var(--color-primary);
+
+  /* el-table */
+  --el-table-bg-color: var(--table-bg);
+  --el-table-header-bg-color: var(--table-header-bg);
+  --el-table-border-color: var(--table-border);
+  --el-table-text-color: var(--table-text);
+  --el-table-row-hover-bg-color: var(--table-row-hover);
+
+  /* el-tree */
+  --el-tree-bg-color: var(--tree-bg);
+  --el-tree-text-color: var(--tree-text);
+  --el-tree-node-hover-bg-color: var(--tree-hover-bg);
+
+  /* el-tag */
+  --el-tag-bg-color: var(--tag-bg);
+  --el-tag-border-color: var(--tag-border);
+  --el-tag-text-color: var(--tag-text);
+
+  /* el-dropdown / el-popper */
+  --el-popper-bg-color: var(--menu-bg);
+  --el-popper-border-color: var(--border-base);
+
+  /* el-tabs */
+  --el-tabs-header-bg-color: var(--bg-secondary);
+}
+
+/* Element Plus 组件深度覆盖 */
+[data-theme='dark'] .el-dialog {
+  background-color: var(--dialog-bg);
+  border: 1px solid var(--dialog-border);
+}
+
+[data-theme='dark'] .el-dialog__header {
+  background-color: var(--dialog-header-bg);
+  border-bottom: 1px solid var(--dialog-border);
+}
+
+[data-theme='dark'] .el-dialog__title {
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .el-dialog__body {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-dialog__footer {
+  border-top: 1px solid var(--dialog-border);
+}
+
+[data-theme='dark'] .el-input__wrapper {
+  background-color: var(--input-bg);
+  box-shadow: 0 0 0 1px var(--input-border) inset;
+}
+
+[data-theme='dark'] .el-input__inner {
+  color: var(--input-text);
+}
+
+[data-theme='dark'] .el-input__inner::placeholder {
+  color: var(--input-placeholder);
+}
+
+[data-theme='dark'] .el-select .el-input__wrapper {
+  background-color: var(--input-bg);
+}
+
+[data-theme='dark'] .el-select-dropdown {
+  background-color: var(--menu-bg);
+  border: 1px solid var(--border-base);
+}
+
+[data-theme='dark'] .el-select-dropdown__item {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-select-dropdown__item.hover,
+[data-theme='dark'] .el-select-dropdown__item:hover {
+  background-color: var(--menu-hover-bg);
+}
+
+[data-theme='dark'] .el-select-dropdown__item.selected {
+  color: var(--color-primary);
+}
+
+[data-theme='dark'] .el-popper.is-light {
+  background-color: var(--menu-bg);
+  border: 1px solid var(--border-base);
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-button--default {
+  --el-button-bg-color: var(--bg-tertiary);
+  --el-button-border-color: var(--border-base);
+  --el-button-text-color: var(--text-primary);
+}
+
+[data-theme='dark'] .el-button--default:hover {
+  --el-button-bg-color: var(--bg-hover);
+  --el-button-border-color: var(--color-primary);
+  --el-button-text-color: var(--color-primary);
+}
+
+[data-theme='dark'] .el-menu {
+  background-color: var(--menu-bg);
+  border-bottom-color: var(--border-base);
+}
+
+[data-theme='dark'] .el-menu-item {
+  color: var(--menu-text);
+}
+
+[data-theme='dark'] .el-menu-item:hover {
+  background-color: var(--menu-hover-bg);
+}
+
+[data-theme='dark'] .el-menu-item.is-active {
+  color: var(--menu-active-text);
+}
+
+[data-theme='dark'] .el-sub-menu__title {
+  color: var(--menu-text);
+}
+
+[data-theme='dark'] .el-sub-menu__title:hover {
+  background-color: var(--menu-hover-bg);
+}
+
+[data-theme='dark'] .el-table {
+  background-color: var(--table-bg);
+  color: var(--table-text);
+}
+
+[data-theme='dark'] .el-table th.el-table__cell {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+}
+
+[data-theme='dark'] .el-table tr {
+  background-color: var(--table-bg);
+}
+
+[data-theme='dark'] .el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background-color: var(--table-row-stripe);
+}
+
+[data-theme='dark'] .el-table__body tr:hover > td.el-table__cell {
+  background-color: var(--table-row-hover);
+}
+
+[data-theme='dark'] .el-table td.el-table__cell {
+  border-bottom-color: var(--table-border);
+}
+
+[data-theme='dark'] .el-tree {
+  background-color: var(--tree-bg);
+  color: var(--tree-text);
+}
+
+[data-theme='dark'] .el-tree-node__content:hover {
+  background-color: var(--tree-hover-bg);
+}
+
+[data-theme='dark'] .el-tag {
+  background-color: var(--tag-bg);
+  border-color: var(--tag-border);
+  color: var(--tag-text);
+}
+
+[data-theme='dark'] .el-checkbox__label {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-radio__label {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-switch__label {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-slider__runway {
+  background-color: var(--bg-tertiary);
+}
+
+[data-theme='dark'] .el-color-picker__trigger {
+  border-color: var(--border-base);
+}
+
+[data-theme='dark'] .el-input-number__decrease,
+[data-theme='dark'] .el-input-number__increase {
+  background-color: var(--bg-tertiary);
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-input-number__decrease:hover,
+[data-theme='dark'] .el-input-number__increase:hover {
+  color: var(--color-primary);
+}
+
+[data-theme='dark'] .el-message-box {
+  background-color: var(--dialog-bg);
+  border: 1px solid var(--dialog-border);
+}
+
+[data-theme='dark'] .el-message-box__title {
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .el-message-box__message {
+  color: var(--text-regular);
+}
+
+[data-theme='dark'] .el-loading-mask {
+  background-color: var(--bg-overlay);
+}
